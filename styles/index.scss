@@ -1,0 +1,123 @@
+
+view {
+  box-sizing: border-box;
+}
+
+view,
+text {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+$sizes: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 25, 30, 35, 40,
+45, 50;
+$ts: 't', 'r', 'b', 'l';
+$ps: 'top', 'right', 'bottom', 'left';
+@for $i from 1 through length($sizes) {
+  $number: nth($sizes, $i);
+  .radius-#{$number} {
+    border-radius: #{($number * 1px)};
+  }
+  @for $j from 1 through length($ts) {
+    $t: nth($ts, $j);
+    .m#{$t}-#{$number} {
+      margin-#{nth($ps, $j)}: #{($number * 1px)};
+    }
+    .p#{$t}-#{$number} {
+      padding-#{nth($ps, $j)}: #{($number * 1px)};
+    }
+    .ma-#{$number} {
+      margin: #{($number * 1px)};
+    }
+    .pa-#{$number} {
+      padding: #{($number * 1px)};
+    }
+  }
+}
+
+/*
+  计算常用的字体大小
+ */
+$fontSizes: 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+36, 38, 40, 42;
+@for $i from 1 through length($fontSizes) {
+  $number: nth($fontSizes, $i);
+  .font-#{$number} {
+    font-size: #{($number * 1px)};
+  }
+}
+
+/*
+ text-align: center | left | right
+ */
+$aligns: 'center', 'left', 'right';
+@for $i from 1 through length($aligns) {
+  $item: nth($aligns, $i);
+  .text-#{$item} {
+    text-align: #{$item};
+  }
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.base-box {
+  padding: 20px;
+}
+
+// 保留空白符序列\n正常换行,处理字母数字自动换行
+.word-wrap {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,17 +1,14 @@
-import App from './App'
-
+import App from './App';
+import './styles/index.scss';
+import uView from 'uview-ui';
 // #ifndef VUE3
-import Vue from 'vue'
-Vue.config.productionTip = false
-App.mpType = 'app'
-
+import Vue from 'vue';
+Vue.config.productionTip = false;
+App.mpType = 'app';
+Vue.use(uView);
 try {
   function isPromise(obj) {
-    return (
-      !!obj &&
-      (typeof obj === "object" || typeof obj === "function") &&
-      typeof obj.then === "function"
-    );
+    return !!obj && (typeof obj === 'object' || typeof obj === 'function') && typeof obj.then === 'function';
   }
 
   // 统一 vue2 API Promise 化返回格式与 vue3 保持一致
@@ -31,20 +28,20 @@ try {
       });
     },
   });
-} catch (error) { }
+} catch (error) {}
 
 const app = new Vue({
-  ...App
-})
-app.$mount()
+  ...App,
+});
+app.$mount();
 // #endif
 
 // #ifdef VUE3
-import { createSSRApp } from 'vue'
+import { createSSRApp } from 'vue';
 export function createApp() {
-  const app = createSSRApp(App)
+  const app = createSSRApp(App);
   return {
-    app
-  }
+    app,
+  };
 }
 // #endif

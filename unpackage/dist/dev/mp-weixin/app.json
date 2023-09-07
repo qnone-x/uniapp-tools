@@ -1,12 +1,33 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/home/index",
+    "pages/my/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "selectedColor": "#589FFF",
+    "color": "#999",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "柠堂",
+        "iconPath": "static/images/icon-home.png",
+        "selectedIconPath": "static/images/icon-home-act.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "static/images/icon-my.png",
+        "selectedIconPath": "static/images/icon-my-act.png"
+      }
+    ]
   },
   "usingComponents": {}
 }

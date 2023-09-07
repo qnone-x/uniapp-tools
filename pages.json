@@ -1,17 +1,49 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"uniIdRouter": {}
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "柠堂",
+        "navigationStyle": "custom"
+      }
+    },
+
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "tabBar": {
+    "selectedColor": "#589FFF",
+    "color": "#999",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "fontSize": "10px",
+    "iconWidth": "20px",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "柠堂",
+        "iconPath": "static/images/icon-home.png",
+        "selectedIconPath": "static/images/icon-home-act.png"
+      },
+
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "static/images/icon-my.png",
+        "selectedIconPath": "static/images/icon-my-act.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "uniIdRouter": {}
 }
