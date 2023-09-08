@@ -1,5 +1,5 @@
 <template>
-  <uni-container title="我的" ref="messageRef" navType="custom">
+  <uni-container title="我的" ref="messageRef">
     <view>我的</view>
   </uni-container>
 </template>

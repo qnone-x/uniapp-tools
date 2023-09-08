@@ -1,30 +1,32 @@
 <template>
   <view class="container">
-    <view class="header-wrap" :style="{ backgroundImage: `url('../../static/images/bg-back-1.jpg')` }">
-      <view class="status-bar" :style="{ height: `${systemInfo.statusBarHeight}px` }" />
+    <image class="img" :src="bg2" model="scaleToFill" />
+    <view class="header-wrap">
+      <view class="status-bar" :style="{ height: `${systemInfo?.statusBarHeight}px` }" />
       <div class="header">
         <template v-if="navType === 'custom'">
-          <view class="title">{{ title }}</view>
+          <uni-title>{{ title }}</uni-title>
         </template>
         <templatate v-else>
           <view class="left" @click="handleBack()">
-            <u-icon name="arrow-left" color="#000000" size="22" />
+            <image class="back-img" :src="back"></image>
           </view>
-          <view class="title">{{ title }}</view>
+          <uni-title>{{ title }}</uni-title>
         </templatate>
       </div>
     </view>
-    <view class="bg-wrap" :style="{ paddingTop: `calc(${statusBarHeight}px + 40rpx)` }">
-      <image class="img" :src="'../../static/images/bg-back-2.jpg'" model="scaleToFill" />
-    </view>
-    <view style="position: relative; z-index: 999">
+    <view style="position: relative; z-index: 999; padding: 20px">
       <slot />
     </view>
   </view>
 </template>
 
 <script>
+import bg2 from '~@/static/images/bg-back-2.jpg';
+import back from '~@/static/images/back.png';
+import uniTitle from '~@/components/uni-title';
 export default {
+  components: { uniTitle },
   props: {
     navType: {
       type: String,
@@ -41,7 +43,8 @@ export default {
   },
   data() {
     return {
-      statusBarHeight: 0,
+      bg2,
+      back,
       systemInfo: {},
     };
   },
@@ -49,12 +52,12 @@ export default {
     // 获取设备系统信息
     this.systemInfo = wx.getSystemInfoSync();
     // 输出设备信息
-    console.log('设备型号：', systemInfo.model);
-    console.log('操作系统版本：', systemInfo.system);
-    console.log('屏幕宽度：', systemInfo.windowWidth);
-    console.log('屏幕高度：', systemInfo.windowHeight);
-    console.log('像素比率：', systemInfo.pixelRatio);
-    console.log('刘海/电池状态栏->高度：', systemInfo.statusBarHeight);
+    console.log('设备型号：', this.systemInfo.model);
+    console.log('操作系统版本：', this.systemInfo.system);
+    console.log('屏幕宽度：', this.systemInfo.windowWidth);
+    console.log('屏幕高度：', this.systemInfo.windowHeight);
+    console.log('像素比率：', this.systemInfo.pixelRatio);
+    console.log('刘海/电池状态栏->高度：', this.systemInfo.statusBarHeight);
     wx.setNavigationBarColor({
       frontColor: '#000000',
       backgroundColor: '#ffffff',
@@ -68,19 +71,17 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-.bg-wrap {
-  width: 100%;
-  height: 800px;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-
-  .img {
-    width: 100%;
-    height: 100%;
-  }
+.back-img {
+  width: 26px;
+  height: 26px;
 }
-
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
 .status-bar {
   width: 100%;
   //border: 1px dashed black;
@@ -90,9 +91,9 @@ export default {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: 100% 100%;
+  //background-repeat: no-repeat;
   height: 80px;
 }
 
@@ -101,20 +102,16 @@ export default {
   height: 40px;
   line-height: 40px;
   //border: 1px dashed black;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .left {
     position: absolute;
     left: 0;
     padding-left: 15px;
+    top: 5px;
+    height: 26px;
     //border: 1px dashed black;
-    height: 40px;
-    line-height: 40px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .title {
-    text-align: center;
   }
 }
 </style>
