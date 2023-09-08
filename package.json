@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^3.2.38",
-    "uview-ui": "^2.0.31"
+    "lodash": "^4.17.21",
+    "uview-ui": "^2.0.31",
+    "vant": "^4.6.7",
+    "vue": "^3.2.38"
   },
   "devDependencies": {
     "postcss": "^8.4.16",

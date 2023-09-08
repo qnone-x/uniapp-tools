@@ -1,11 +1,11 @@
 import App from './App';
 import './styles/index.scss';
-import uView from 'uview-ui';
+// import 'vant/lib/index.css';
 // #ifndef VUE3
 import Vue from 'vue';
 Vue.config.productionTip = false;
 App.mpType = 'app';
-Vue.use(uView);
+
 try {
   function isPromise(obj) {
     return !!obj && (typeof obj === 'object' || typeof obj === 'function') && typeof obj.then === 'function';
@@ -38,8 +38,14 @@ app.$mount();
 
 // #ifdef VUE3
 import { createSSRApp } from 'vue';
+
+import uniContainer from '@/components/uni-container/index.vue';
+import uniTitle from '@/components/uni-title';
+const app = createSSRApp(App);
+
+app.component('uniContainer', uniContainer);
+app.component('uniTitle', uniTitle);
 export function createApp() {
-  const app = createSSRApp(App);
   return {
     app,
   };

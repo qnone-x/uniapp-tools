@@ -1,44 +1,44 @@
 <template>
-  <uni-container title="首页" ref="messageRef" navType="custom">
-    <div class="wrapper">111</div>
+  <uni-container title="工具堂" ref="messageRef" navType="custom">
+    <van-button type="primary">主要按钮</van-button>
+    <view class="flex-start box">
+      <view class="item" :key="i.url" v-for="i in list" @click="handleClickItem(i)">
+        <image class="img" :src="i.url"></image>
+        <view>{{ i.name }}</view>
+      </view>
+    </view>
   </uni-container>
 </template>
 
 <script setup>
 import { ref } from 'vue';
-import UniContainer from '../../components/uni-container/index.vue';
-let a = ref(1);
+let list = ref([
+  { name: '利率计算', url: '/static/images/ll.png', path: '/pages/rate/index' },
+  { name: '利息计算', url: '/static/images/lx.png', path: '/pages/interest/index' },
+]);
+
+function handleClickItem({ path }) {
+  uni.navigateTo({ url: path });
+}
 </script>
 
-<style lang="scss">
-.wrapper {
-  //height: 1500px;
-  //background-color: red;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  position: relative;
-  z-index: 50;
-}
-
-.notice-wrap {
-  padding: 0 30px;
-
-  .content-wrap {
-    border-radius: 12px;
-    width: 100%;
-    height: 82px;
-    padding: 0 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: linear-gradient(270deg, #bfd8ff 0%, #ecf3ff 37%, #ffffff 100%);
-
-    .icon {
-      width: 42px;
-      height: 42px;
-      //margin-right: 5px;
-      flex-shrink: 0;
-    }
+<style scoped lang="scss">
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px #f1f1f1;
+  .img {
+    width: 30px;
+    height: 30px;
   }
+}
+.box {
+  flex-wrap: wrap;
 }
 </style>

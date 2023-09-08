@@ -24,9 +24,7 @@
 <script>
 import bg2 from '~@/static/images/bg-back-2.jpg';
 import back from '~@/static/images/back.png';
-import uniTitle from '~@/components/uni-title';
 export default {
-  components: { uniTitle },
   props: {
     navType: {
       type: String,

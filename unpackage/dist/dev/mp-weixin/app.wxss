@@ -1,5 +1,5 @@
 
-	/*每个页面公共css */
+/*每个页面公共css */
 
 /**
  * 这里是uni-app内置的常用样式变量
@@ -26,2032 +26,1587 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
+.van-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.van-multi-ellipsis--l2 {
+  -webkit-line-clamp: 2;
+}
+.van-multi-ellipsis--l2, .van-multi-ellipsis--l3 {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.van-multi-ellipsis--l3 {
+  -webkit-line-clamp: 3;
+}
+.van-clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.van-hairline, .van-hairline--bottom, .van-hairline--left, .van-hairline--right, .van-hairline--surround, .van-hairline--top, .van-hairline--top-bottom {
+  position: relative;
+}
+.van-hairline--bottom:after, .van-hairline--left:after, .van-hairline--right:after, .van-hairline--surround:after, .van-hairline--top-bottom:after, .van-hairline--top:after, .van-hairline:after {
+  border: 0 solid #ebedf0;
+  bottom: -50%;
+  box-sizing: border-box;
+  content: " ";
+  left: -50%;
+  pointer-events: none;
+  position: absolute;
+  right: -50%;
+  top: -50%;
+  transform: scale(0.5);
+  transform-origin: center;
+}
+.van-hairline--top:after {
+  border-top-width: 1px;
+}
+.van-hairline--left:after {
+  border-left-width: 1px;
+}
+.van-hairline--right:after {
+  border-right-width: 1px;
+}
+.van-hairline--bottom:after {
+  border-bottom-width: 1px;
+}
+.van-hairline--top-bottom:after {
+  border-width: 1px 0;
+}
+.van-hairline--surround:after {
+  border-width: 1px;
+}
 view {
   box-sizing: border-box;
 }
-
 view,
 text {
   word-wrap: break-word;
   word-break: break-all;
 }
-
 .radius-1 {
   border-radius: 1px;
 }
-
 .mt-1 {
   margin-top: 1px;
 }
-
 .pt-1 {
   padding-top: 1px;
 }
-
 .ma-1 {
   margin: 1px;
 }
-
 .pa-1 {
   padding: 1px;
 }
-
 .mr-1 {
   margin-right: 1px;
 }
-
 .pr-1 {
   padding-right: 1px;
 }
-
 .ma-1 {
   margin: 1px;
 }
-
 .pa-1 {
   padding: 1px;
 }
-
 .mb-1 {
   margin-bottom: 1px;
 }
-
 .pb-1 {
   padding-bottom: 1px;
 }
-
 .ma-1 {
   margin: 1px;
 }
-
 .pa-1 {
   padding: 1px;
 }
-
 .ml-1 {
   margin-left: 1px;
 }
-
 .pl-1 {
   padding-left: 1px;
 }
-
 .ma-1 {
   margin: 1px;
 }
-
 .pa-1 {
   padding: 1px;
 }
-
 .radius-2 {
   border-radius: 2px;
 }
-
 .mt-2 {
   margin-top: 2px;
 }
-
 .pt-2 {
   padding-top: 2px;
 }
-
 .ma-2 {
   margin: 2px;
 }
-
 .pa-2 {
   padding: 2px;
 }
-
 .mr-2 {
   margin-right: 2px;
 }
-
 .pr-2 {
   padding-right: 2px;
 }
-
 .ma-2 {
   margin: 2px;
 }
-
 .pa-2 {
   padding: 2px;
 }
-
 .mb-2 {
   margin-bottom: 2px;
 }
-
 .pb-2 {
   padding-bottom: 2px;
 }
-
 .ma-2 {
   margin: 2px;
 }
-
 .pa-2 {
   padding: 2px;
 }
-
 .ml-2 {
   margin-left: 2px;
 }
-
 .pl-2 {
   padding-left: 2px;
 }
-
 .ma-2 {
   margin: 2px;
 }
-
 .pa-2 {
   padding: 2px;
 }
-
 .radius-3 {
   border-radius: 3px;
 }
-
 .mt-3 {
   margin-top: 3px;
 }
-
 .pt-3 {
   padding-top: 3px;
 }
-
 .ma-3 {
   margin: 3px;
 }
-
 .pa-3 {
   padding: 3px;
 }
-
 .mr-3 {
   margin-right: 3px;
 }
-
 .pr-3 {
   padding-right: 3px;
 }
-
 .ma-3 {
   margin: 3px;
 }
-
 .pa-3 {
   padding: 3px;
 }
-
 .mb-3 {
   margin-bottom: 3px;
 }
-
 .pb-3 {
   padding-bottom: 3px;
 }
-
 .ma-3 {
   margin: 3px;
 }
-
 .pa-3 {
   padding: 3px;
 }
-
 .ml-3 {
   margin-left: 3px;
 }
-
 .pl-3 {
   padding-left: 3px;
 }
-
 .ma-3 {
   margin: 3px;
 }
-
 .pa-3 {
   padding: 3px;
 }
-
 .radius-4 {
   border-radius: 4px;
 }
-
 .mt-4 {
   margin-top: 4px;
 }
-
 .pt-4 {
   padding-top: 4px;
 }
-
 .ma-4 {
   margin: 4px;
 }
-
 .pa-4 {
   padding: 4px;
 }
-
 .mr-4 {
   margin-right: 4px;
 }
-
 .pr-4 {
   padding-right: 4px;
 }
-
 .ma-4 {
   margin: 4px;
 }
-
 .pa-4 {
   padding: 4px;
 }
-
 .mb-4 {
   margin-bottom: 4px;
 }
-
 .pb-4 {
   padding-bottom: 4px;
 }
-
 .ma-4 {
   margin: 4px;
 }
-
 .pa-4 {
   padding: 4px;
 }
-
 .ml-4 {
   margin-left: 4px;
 }
-
 .pl-4 {
   padding-left: 4px;
 }
-
 .ma-4 {
   margin: 4px;
 }
-
 .pa-4 {
   padding: 4px;
 }
-
 .radius-5 {
   border-radius: 5px;
 }
-
 .mt-5 {
   margin-top: 5px;
 }
-
 .pt-5 {
   padding-top: 5px;
 }
-
 .ma-5 {
   margin: 5px;
 }
-
 .pa-5 {
   padding: 5px;
 }
-
 .mr-5 {
   margin-right: 5px;
 }
-
 .pr-5 {
   padding-right: 5px;
 }
-
 .ma-5 {
   margin: 5px;
 }
-
 .pa-5 {
   padding: 5px;
 }
-
 .mb-5 {
   margin-bottom: 5px;
 }
-
 .pb-5 {
   padding-bottom: 5px;
 }
-
 .ma-5 {
   margin: 5px;
 }
-
 .pa-5 {
   padding: 5px;
 }
-
 .ml-5 {
   margin-left: 5px;
 }
-
 .pl-5 {
   padding-left: 5px;
 }
-
 .ma-5 {
   margin: 5px;
 }
-
 .pa-5 {
   padding: 5px;
 }
-
 .radius-6 {
   border-radius: 6px;
 }
-
 .mt-6 {
   margin-top: 6px;
 }
-
 .pt-6 {
   padding-top: 6px;
 }
-
 .ma-6 {
   margin: 6px;
 }
-
 .pa-6 {
   padding: 6px;
 }
-
 .mr-6 {
   margin-right: 6px;
 }
-
 .pr-6 {
   padding-right: 6px;
 }
-
 .ma-6 {
   margin: 6px;
 }
-
 .pa-6 {
   padding: 6px;
 }
-
 .mb-6 {
   margin-bottom: 6px;
 }
-
 .pb-6 {
   padding-bottom: 6px;
 }
-
 .ma-6 {
   margin: 6px;
 }
-
 .pa-6 {
   padding: 6px;
 }
-
 .ml-6 {
   margin-left: 6px;
 }
-
 .pl-6 {
   padding-left: 6px;
 }
-
 .ma-6 {
   margin: 6px;
 }
-
 .pa-6 {
   padding: 6px;
 }
-
 .radius-7 {
   border-radius: 7px;
 }
-
 .mt-7 {
   margin-top: 7px;
 }
-
 .pt-7 {
   padding-top: 7px;
 }
-
 .ma-7 {
   margin: 7px;
 }
-
 .pa-7 {
   padding: 7px;
 }
-
 .mr-7 {
   margin-right: 7px;
 }
-
 .pr-7 {
   padding-right: 7px;
 }
-
 .ma-7 {
   margin: 7px;
 }
-
 .pa-7 {
   padding: 7px;
 }
-
 .mb-7 {
   margin-bottom: 7px;
 }
-
 .pb-7 {
   padding-bottom: 7px;
 }
-
 .ma-7 {
   margin: 7px;
 }
-
 .pa-7 {
   padding: 7px;
 }
-
 .ml-7 {
   margin-left: 7px;
 }
-
 .pl-7 {
   padding-left: 7px;
 }
-
 .ma-7 {
   margin: 7px;
 }
-
 .pa-7 {
   padding: 7px;
 }
-
 .radius-8 {
   border-radius: 8px;
 }
-
 .mt-8 {
   margin-top: 8px;
 }
-
 .pt-8 {
   padding-top: 8px;
 }
-
 .ma-8 {
   margin: 8px;
 }
-
 .pa-8 {
   padding: 8px;
 }
-
 .mr-8 {
   margin-right: 8px;
 }
-
 .pr-8 {
   padding-right: 8px;
 }
-
 .ma-8 {
   margin: 8px;
 }
-
 .pa-8 {
   padding: 8px;
 }
-
 .mb-8 {
   margin-bottom: 8px;
 }
-
 .pb-8 {
   padding-bottom: 8px;
 }
-
 .ma-8 {
   margin: 8px;
 }
-
 .pa-8 {
   padding: 8px;
 }
-
 .ml-8 {
   margin-left: 8px;
 }
-
 .pl-8 {
   padding-left: 8px;
 }
-
 .ma-8 {
   margin: 8px;
 }
-
 .pa-8 {
   padding: 8px;
 }
-
 .radius-9 {
   border-radius: 9px;
 }
-
 .mt-9 {
   margin-top: 9px;
 }
-
 .pt-9 {
   padding-top: 9px;
 }
-
 .ma-9 {
   margin: 9px;
 }
-
 .pa-9 {
   padding: 9px;
 }
-
 .mr-9 {
   margin-right: 9px;
 }
-
 .pr-9 {
   padding-right: 9px;
 }
-
 .ma-9 {
   margin: 9px;
 }
-
 .pa-9 {
   padding: 9px;
 }
-
 .mb-9 {
   margin-bottom: 9px;
 }
-
 .pb-9 {
   padding-bottom: 9px;
 }
-
 .ma-9 {
   margin: 9px;
 }
-
 .pa-9 {
   padding: 9px;
 }
-
 .ml-9 {
   margin-left: 9px;
 }
-
 .pl-9 {
   padding-left: 9px;
 }
-
 .ma-9 {
   margin: 9px;
 }
-
 .pa-9 {
   padding: 9px;
 }
-
 .radius-10 {
   border-radius: 10px;
 }
-
 .mt-10 {
   margin-top: 10px;
 }
-
 .pt-10 {
   padding-top: 10px;
 }
-
 .ma-10 {
   margin: 10px;
 }
-
 .pa-10 {
   padding: 10px;
 }
-
 .mr-10 {
   margin-right: 10px;
 }
-
 .pr-10 {
   padding-right: 10px;
 }
-
 .ma-10 {
   margin: 10px;
 }
-
 .pa-10 {
   padding: 10px;
 }
-
 .mb-10 {
   margin-bottom: 10px;
 }
-
 .pb-10 {
   padding-bottom: 10px;
 }
-
 .ma-10 {
   margin: 10px;
 }
-
 .pa-10 {
   padding: 10px;
 }
-
 .ml-10 {
   margin-left: 10px;
 }
-
 .pl-10 {
   padding-left: 10px;
 }
-
 .ma-10 {
   margin: 10px;
 }
-
 .pa-10 {
   padding: 10px;
 }
-
 .radius-11 {
   border-radius: 11px;
 }
-
 .mt-11 {
   margin-top: 11px;
 }
-
 .pt-11 {
   padding-top: 11px;
 }
-
 .ma-11 {
   margin: 11px;
 }
-
 .pa-11 {
   padding: 11px;
 }
-
 .mr-11 {
   margin-right: 11px;
 }
-
 .pr-11 {
   padding-right: 11px;
 }
-
 .ma-11 {
   margin: 11px;
 }
-
 .pa-11 {
   padding: 11px;
 }
-
 .mb-11 {
   margin-bottom: 11px;
 }
-
 .pb-11 {
   padding-bottom: 11px;
 }
-
 .ma-11 {
   margin: 11px;
 }
-
 .pa-11 {
   padding: 11px;
 }
-
 .ml-11 {
   margin-left: 11px;
 }
-
 .pl-11 {
   padding-left: 11px;
 }
-
 .ma-11 {
   margin: 11px;
 }
-
 .pa-11 {
   padding: 11px;
 }
-
 .radius-12 {
   border-radius: 12px;
 }
-
 .mt-12 {
   margin-top: 12px;
 }
-
 .pt-12 {
   padding-top: 12px;
 }
-
 .ma-12 {
   margin: 12px;
 }
-
 .pa-12 {
   padding: 12px;
 }
-
 .mr-12 {
   margin-right: 12px;
 }
-
 .pr-12 {
   padding-right: 12px;
 }
-
 .ma-12 {
   margin: 12px;
 }
-
 .pa-12 {
   padding: 12px;
 }
-
 .mb-12 {
   margin-bottom: 12px;
 }
-
 .pb-12 {
   padding-bottom: 12px;
 }
-
 .ma-12 {
   margin: 12px;
 }
-
 .pa-12 {
   padding: 12px;
 }
-
 .ml-12 {
   margin-left: 12px;
 }
-
 .pl-12 {
   padding-left: 12px;
 }
-
 .ma-12 {
   margin: 12px;
 }
-
 .pa-12 {
   padding: 12px;
 }
-
 .radius-13 {
   border-radius: 13px;
 }
-
 .mt-13 {
   margin-top: 13px;
 }
-
 .pt-13 {
   padding-top: 13px;
 }
-
 .ma-13 {
   margin: 13px;
 }
-
 .pa-13 {
   padding: 13px;
 }
-
 .mr-13 {
   margin-right: 13px;
 }
-
 .pr-13 {
   padding-right: 13px;
 }
-
 .ma-13 {
   margin: 13px;
 }
-
 .pa-13 {
   padding: 13px;
 }
-
 .mb-13 {
   margin-bottom: 13px;
 }
-
 .pb-13 {
   padding-bottom: 13px;
 }
-
 .ma-13 {
   margin: 13px;
 }
-
 .pa-13 {
   padding: 13px;
 }
-
 .ml-13 {
   margin-left: 13px;
 }
-
 .pl-13 {
   padding-left: 13px;
 }
-
 .ma-13 {
   margin: 13px;
 }
-
 .pa-13 {
   padding: 13px;
 }
-
 .radius-14 {
   border-radius: 14px;
 }
-
 .mt-14 {
   margin-top: 14px;
 }
-
 .pt-14 {
   padding-top: 14px;
 }
-
 .ma-14 {
   margin: 14px;
 }
-
 .pa-14 {
   padding: 14px;
 }
-
 .mr-14 {
   margin-right: 14px;
 }
-
 .pr-14 {
   padding-right: 14px;
 }
-
 .ma-14 {
   margin: 14px;
 }
-
 .pa-14 {
   padding: 14px;
 }
-
 .mb-14 {
   margin-bottom: 14px;
 }
-
 .pb-14 {
   padding-bottom: 14px;
 }
-
 .ma-14 {
   margin: 14px;
 }
-
 .pa-14 {
   padding: 14px;
 }
-
 .ml-14 {
   margin-left: 14px;
 }
-
 .pl-14 {
   padding-left: 14px;
 }
-
 .ma-14 {
   margin: 14px;
 }
-
 .pa-14 {
   padding: 14px;
 }
-
 .radius-15 {
   border-radius: 15px;
 }
-
 .mt-15 {
   margin-top: 15px;
 }
-
 .pt-15 {
   padding-top: 15px;
 }
-
 .ma-15 {
   margin: 15px;
 }
-
 .pa-15 {
   padding: 15px;
 }
-
 .mr-15 {
   margin-right: 15px;
 }
-
 .pr-15 {
   padding-right: 15px;
 }
-
 .ma-15 {
   margin: 15px;
 }
-
 .pa-15 {
   padding: 15px;
 }
-
 .mb-15 {
   margin-bottom: 15px;
 }
-
 .pb-15 {
   padding-bottom: 15px;
 }
-
 .ma-15 {
   margin: 15px;
 }
-
 .pa-15 {
   padding: 15px;
 }
-
 .ml-15 {
   margin-left: 15px;
 }
-
 .pl-15 {
   padding-left: 15px;
 }
-
 .ma-15 {
   margin: 15px;
 }
-
 .pa-15 {
   padding: 15px;
 }
-
 .radius-16 {
   border-radius: 16px;
 }
-
 .mt-16 {
   margin-top: 16px;
 }
-
 .pt-16 {
   padding-top: 16px;
 }
-
 .ma-16 {
   margin: 16px;
 }
-
 .pa-16 {
   padding: 16px;
 }
-
 .mr-16 {
   margin-right: 16px;
 }
-
 .pr-16 {
   padding-right: 16px;
 }
-
 .ma-16 {
   margin: 16px;
 }
-
 .pa-16 {
   padding: 16px;
 }
-
 .mb-16 {
   margin-bottom: 16px;
 }
-
 .pb-16 {
   padding-bottom: 16px;
 }
-
 .ma-16 {
   margin: 16px;
 }
-
 .pa-16 {
   padding: 16px;
 }
-
 .ml-16 {
   margin-left: 16px;
 }
-
 .pl-16 {
   padding-left: 16px;
 }
-
 .ma-16 {
   margin: 16px;
 }
-
 .pa-16 {
   padding: 16px;
 }
-
 .radius-17 {
   border-radius: 17px;
 }
-
 .mt-17 {
   margin-top: 17px;
 }
-
 .pt-17 {
   padding-top: 17px;
 }
-
 .ma-17 {
   margin: 17px;
 }
-
 .pa-17 {
   padding: 17px;
 }
-
 .mr-17 {
   margin-right: 17px;
 }
-
 .pr-17 {
   padding-right: 17px;
 }
-
 .ma-17 {
   margin: 17px;
 }
-
 .pa-17 {
   padding: 17px;
 }
-
 .mb-17 {
   margin-bottom: 17px;
 }
-
 .pb-17 {
   padding-bottom: 17px;
 }
-
 .ma-17 {
   margin: 17px;
 }
-
 .pa-17 {
   padding: 17px;
 }
-
 .ml-17 {
   margin-left: 17px;
 }
-
 .pl-17 {
   padding-left: 17px;
 }
-
 .ma-17 {
   margin: 17px;
 }
-
 .pa-17 {
   padding: 17px;
 }
-
 .radius-18 {
   border-radius: 18px;
 }
-
 .mt-18 {
   margin-top: 18px;
 }
-
 .pt-18 {
   padding-top: 18px;
 }
-
 .ma-18 {
   margin: 18px;
 }
-
 .pa-18 {
   padding: 18px;
 }
-
 .mr-18 {
   margin-right: 18px;
 }
-
 .pr-18 {
   padding-right: 18px;
 }
-
 .ma-18 {
   margin: 18px;
 }
-
 .pa-18 {
   padding: 18px;
 }
-
 .mb-18 {
   margin-bottom: 18px;
 }
-
 .pb-18 {
   padding-bottom: 18px;
 }
-
 .ma-18 {
   margin: 18px;
 }
-
 .pa-18 {
   padding: 18px;
 }
-
 .ml-18 {
   margin-left: 18px;
 }
-
 .pl-18 {
   padding-left: 18px;
 }
-
 .ma-18 {
   margin: 18px;
 }
-
 .pa-18 {
   padding: 18px;
 }
-
 .radius-19 {
   border-radius: 19px;
 }
-
 .mt-19 {
   margin-top: 19px;
 }
-
 .pt-19 {
   padding-top: 19px;
 }
-
 .ma-19 {
   margin: 19px;
 }
-
 .pa-19 {
   padding: 19px;
 }
-
 .mr-19 {
   margin-right: 19px;
 }
-
 .pr-19 {
   padding-right: 19px;
 }
-
 .ma-19 {
   margin: 19px;
 }
-
 .pa-19 {
   padding: 19px;
 }
-
 .mb-19 {
   margin-bottom: 19px;
 }
-
 .pb-19 {
   padding-bottom: 19px;
 }
-
 .ma-19 {
   margin: 19px;
 }
-
 .pa-19 {
   padding: 19px;
 }
-
 .ml-19 {
   margin-left: 19px;
 }
-
 .pl-19 {
   padding-left: 19px;
 }
-
 .ma-19 {
   margin: 19px;
 }
-
 .pa-19 {
   padding: 19px;
 }
-
 .radius-20 {
   border-radius: 20px;
 }
-
 .mt-20 {
   margin-top: 20px;
 }
-
 .pt-20 {
   padding-top: 20px;
 }
-
 .ma-20 {
   margin: 20px;
 }
-
 .pa-20 {
   padding: 20px;
 }
-
 .mr-20 {
   margin-right: 20px;
 }
-
 .pr-20 {
   padding-right: 20px;
 }
-
 .ma-20 {
   margin: 20px;
 }
-
 .pa-20 {
   padding: 20px;
 }
-
 .mb-20 {
   margin-bottom: 20px;
 }
-
 .pb-20 {
   padding-bottom: 20px;
 }
-
 .ma-20 {
   margin: 20px;
 }
-
 .pa-20 {
   padding: 20px;
 }
-
 .ml-20 {
   margin-left: 20px;
 }
-
 .pl-20 {
   padding-left: 20px;
 }
-
 .ma-20 {
   margin: 20px;
 }
-
 .pa-20 {
   padding: 20px;
 }
-
 .radius-22 {
   border-radius: 22px;
 }
-
 .mt-22 {
   margin-top: 22px;
 }
-
 .pt-22 {
   padding-top: 22px;
 }
-
 .ma-22 {
   margin: 22px;
 }
-
 .pa-22 {
   padding: 22px;
 }
-
 .mr-22 {
   margin-right: 22px;
 }
-
 .pr-22 {
   padding-right: 22px;
 }
-
 .ma-22 {
   margin: 22px;
 }
-
 .pa-22 {
   padding: 22px;
 }
-
 .mb-22 {
   margin-bottom: 22px;
 }
-
 .pb-22 {
   padding-bottom: 22px;
 }
-
 .ma-22 {
   margin: 22px;
 }
-
 .pa-22 {
   padding: 22px;
 }
-
 .ml-22 {
   margin-left: 22px;
 }
-
 .pl-22 {
   padding-left: 22px;
 }
-
 .ma-22 {
   margin: 22px;
 }
-
 .pa-22 {
   padding: 22px;
 }
-
 .radius-25 {
   border-radius: 25px;
 }
-
 .mt-25 {
   margin-top: 25px;
 }
-
 .pt-25 {
   padding-top: 25px;
 }
-
 .ma-25 {
   margin: 25px;
 }
-
 .pa-25 {
   padding: 25px;
 }
-
 .mr-25 {
   margin-right: 25px;
 }
-
 .pr-25 {
   padding-right: 25px;
 }
-
 .ma-25 {
   margin: 25px;
 }
-
 .pa-25 {
   padding: 25px;
 }
-
 .mb-25 {
   margin-bottom: 25px;
 }
-
 .pb-25 {
   padding-bottom: 25px;
 }
-
 .ma-25 {
   margin: 25px;
 }
-
 .pa-25 {
   padding: 25px;
 }
-
 .ml-25 {
   margin-left: 25px;
 }
-
 .pl-25 {
   padding-left: 25px;
 }
-
 .ma-25 {
   margin: 25px;
 }
-
 .pa-25 {
   padding: 25px;
 }
-
 .radius-30 {
   border-radius: 30px;
 }
-
 .mt-30 {
   margin-top: 30px;
 }
-
 .pt-30 {
   padding-top: 30px;
 }
-
 .ma-30 {
   margin: 30px;
 }
-
 .pa-30 {
   padding: 30px;
 }
-
 .mr-30 {
   margin-right: 30px;
 }
-
 .pr-30 {
   padding-right: 30px;
 }
-
 .ma-30 {
   margin: 30px;
 }
-
 .pa-30 {
   padding: 30px;
 }
-
 .mb-30 {
   margin-bottom: 30px;
 }
-
 .pb-30 {
   padding-bottom: 30px;
 }
-
 .ma-30 {
   margin: 30px;
 }
-
 .pa-30 {
   padding: 30px;
 }
-
 .ml-30 {
   margin-left: 30px;
 }
-
 .pl-30 {
   padding-left: 30px;
 }
-
 .ma-30 {
   margin: 30px;
 }
-
 .pa-30 {
   padding: 30px;
 }
-
 .radius-35 {
   border-radius: 35px;
 }
-
 .mt-35 {
   margin-top: 35px;
 }
-
 .pt-35 {
   padding-top: 35px;
 }
-
 .ma-35 {
   margin: 35px;
 }
-
 .pa-35 {
   padding: 35px;
 }
-
 .mr-35 {
   margin-right: 35px;
 }
-
 .pr-35 {
   padding-right: 35px;
 }
-
 .ma-35 {
   margin: 35px;
 }
-
 .pa-35 {
   padding: 35px;
 }
-
 .mb-35 {
   margin-bottom: 35px;
 }
-
 .pb-35 {
   padding-bottom: 35px;
 }
-
 .ma-35 {
   margin: 35px;
 }
-
 .pa-35 {
   padding: 35px;
 }
-
 .ml-35 {
   margin-left: 35px;
 }
-
 .pl-35 {
   padding-left: 35px;
 }
-
 .ma-35 {
   margin: 35px;
 }
-
 .pa-35 {
   padding: 35px;
 }
-
 .radius-40 {
   border-radius: 40px;
 }
-
 .mt-40 {
   margin-top: 40px;
 }
-
 .pt-40 {
   padding-top: 40px;
 }
-
 .ma-40 {
   margin: 40px;
 }
-
 .pa-40 {
   padding: 40px;
 }
-
 .mr-40 {
   margin-right: 40px;
 }
-
 .pr-40 {
   padding-right: 40px;
 }
-
 .ma-40 {
   margin: 40px;
 }
-
 .pa-40 {
   padding: 40px;
 }
-
 .mb-40 {
   margin-bottom: 40px;
 }
-
 .pb-40 {
   padding-bottom: 40px;
 }
-
 .ma-40 {
   margin: 40px;
 }
-
 .pa-40 {
   padding: 40px;
 }
-
 .ml-40 {
   margin-left: 40px;
 }
-
 .pl-40 {
   padding-left: 40px;
 }
-
 .ma-40 {
   margin: 40px;
 }
-
 .pa-40 {
   padding: 40px;
 }
-
 .radius-45 {
   border-radius: 45px;
 }
-
 .mt-45 {
   margin-top: 45px;
 }
-
 .pt-45 {
   padding-top: 45px;
 }
-
 .ma-45 {
   margin: 45px;
 }
-
 .pa-45 {
   padding: 45px;
 }
-
 .mr-45 {
   margin-right: 45px;
 }
-
 .pr-45 {
   padding-right: 45px;
 }
-
 .ma-45 {
   margin: 45px;
 }
-
 .pa-45 {
   padding: 45px;
 }
-
 .mb-45 {
   margin-bottom: 45px;
 }
-
 .pb-45 {
   padding-bottom: 45px;
 }
-
 .ma-45 {
   margin: 45px;
 }
-
 .pa-45 {
   padding: 45px;
 }
-
 .ml-45 {
   margin-left: 45px;
 }
-
 .pl-45 {
   padding-left: 45px;
 }
-
 .ma-45 {
   margin: 45px;
 }
-
 .pa-45 {
   padding: 45px;
 }
-
 .radius-50 {
   border-radius: 50px;
 }
-
 .mt-50 {
   margin-top: 50px;
 }
-
 .pt-50 {
   padding-top: 50px;
 }
-
 .ma-50 {
   margin: 50px;
 }
-
 .pa-50 {
   padding: 50px;
 }
-
 .mr-50 {
   margin-right: 50px;
 }
-
 .pr-50 {
   padding-right: 50px;
 }
-
 .ma-50 {
   margin: 50px;
 }
-
 .pa-50 {
   padding: 50px;
 }
-
 .mb-50 {
   margin-bottom: 50px;
 }
-
 .pb-50 {
   padding-bottom: 50px;
 }
-
 .ma-50 {
   margin: 50px;
 }
-
 .pa-50 {
   padding: 50px;
 }
-
 .ml-50 {
   margin-left: 50px;
 }
-
 .pl-50 {
   padding-left: 50px;
 }
-
 .ma-50 {
   margin: 50px;
 }
-
 .pa-50 {
   padding: 50px;
 }
-
 /*
   计算常用的字体大小
  */
 .font-12 {
   font-size: 12px;
 }
-
 .font-13 {
   font-size: 13px;
 }
-
 .font-14 {
   font-size: 14px;
 }
-
 .font-15 {
   font-size: 15px;
 }
-
 .font-16 {
   font-size: 16px;
 }
-
 .font-17 {
   font-size: 17px;
 }
-
 .font-18 {
   font-size: 18px;
 }
-
 .font-19 {
   font-size: 19px;
 }
-
 .font-20 {
   font-size: 20px;
 }
-
 .font-21 {
   font-size: 21px;
 }
-
 .font-22 {
   font-size: 22px;
 }
-
 .font-24 {
   font-size: 24px;
 }
-
 .font-25 {
   font-size: 25px;
 }
-
 .font-26 {
   font-size: 26px;
 }
-
 .font-27 {
   font-size: 27px;
 }
-
 .font-28 {
   font-size: 28px;
 }
-
 .font-29 {
   font-size: 29px;
 }
-
 .font-30 {
   font-size: 30px;
 }
-
 .font-31 {
   font-size: 31px;
 }
-
 .font-32 {
   font-size: 32px;
 }
-
 .font-33 {
   font-size: 33px;
 }
-
 .font-34 {
   font-size: 34px;
 }
-
 .font-36 {
   font-size: 36px;
 }
-
 .font-38 {
   font-size: 38px;
 }
-
 .font-40 {
   font-size: 40px;
 }
-
 .font-42 {
   font-size: 42px;
 }
-
 /*
  text-align: center | left | right
  */
 .text-center {
   text-align: center;
 }
-
 .text-left {
   text-align: left;
 }
-
 .text-right {
   text-align: right;
 }
-
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .flex-column-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 .flex-start {
   display: flex !important;
   justify-content: flex-start;
   align-items: center;
 }
-
 .flex-end {
   display: flex !important;
   justify-content: flex-end;
   align-items: center;
 }
-
 .flex-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .flex-around {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .flex-wrap {
   flex-wrap: wrap;
 }
-
 .fl {
   float: left;
 }
-
 .fr {
   float: right;
 }
-
 .base-box {
   padding: 20px;
 }
-
 .word-wrap {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-
 .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;

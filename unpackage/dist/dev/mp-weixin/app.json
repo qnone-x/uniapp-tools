@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/home/index",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/rate/index",
+    "pages/interest/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -29,5 +31,8 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-container": "/components/uni-container/index",
+    "uni-title": "/components/uni-title/index"
+  }
 }

@@ -1,9 +1,7 @@
 <template>
-  <uni-container title="我的" ref="messageRef">
+  <uni-container title="我的" ref="messageRef" navType="custom">
     <view>我的</view>
   </uni-container>
 </template>
-<script setup>
-import UniContainer from '../../components/uni-container/index.vue';
-</script>
+<script setup></script>
 <style scoped></style>

@@ -4,6 +4,8 @@ const common_vendor = require("./common/vendor.js");
 if (!Math) {
   "./pages/home/index.js";
   "./pages/my/index.js";
+  "./pages/rate/index.js";
+  "./pages/interest/index.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -17,8 +19,12 @@ const _sfc_main = {
   }
 };
 const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/work/demo/qn-tools/App.vue"]]);
+const uniContainer = () => "./components/uni-container/index.js";
+const uniTitle = () => "./components/uni-title/index.js";
+const app = common_vendor.createSSRApp(App);
+app.component("uniContainer", uniContainer);
+app.component("uniTitle", uniTitle);
 function createApp() {
-  const app = common_vendor.createSSRApp(App);
   return {
     app
   };

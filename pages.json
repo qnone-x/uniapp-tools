@@ -7,11 +7,24 @@
         "navigationStyle": "custom"
       }
     },
-
     {
       "path": "pages/my/index",
       "style": {
         "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/rate/index",
+      "style": {
+        "navigationBarTitleText": "利率计算",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/interest/index",
+      "style": {
+        "navigationBarTitleText": "利息计算",
         "navigationStyle": "custom"
       }
     }
