@@ -1,6 +1,7 @@
 import App from './App';
 import './styles/index.scss';
-// import 'vant/lib/index.css';
+import uviewPlus from 'uview-plus';
+
 // #ifndef VUE3
 import Vue from 'vue';
 Vue.config.productionTip = false;
@@ -43,8 +44,10 @@ import uniContainer from '@/components/uni-container/index.vue';
 import uniTitle from '@/components/uni-title';
 const app = createSSRApp(App);
 
+app.use(uviewPlus);
 app.component('uniContainer', uniContainer);
 app.component('uniTitle', uniTitle);
+
 export function createApp() {
   return {
     app,

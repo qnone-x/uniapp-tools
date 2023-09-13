@@ -18,10 +18,12 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
+console.log(common_vendor.index.$u.config.v, "console.log(uni.$u.config.v);");
 const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/work/demo/qn-tools/App.vue"]]);
 const uniContainer = () => "./components/uni-container/index.js";
 const uniTitle = () => "./components/uni-title/index.js";
 const app = common_vendor.createSSRApp(App);
+app.use(common_vendor.uviewPlus);
 app.component("uniContainer", uniContainer);
 app.component("uniTitle", uniTitle);
 function createApp() {

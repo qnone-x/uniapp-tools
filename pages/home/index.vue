@@ -1,6 +1,5 @@
 <template>
   <uni-container title="工具堂" ref="messageRef" navType="custom">
-    <van-button type="primary">主要按钮</van-button>
     <view class="flex-start box">
       <view class="item" :key="i.url" v-for="i in list" @click="handleClickItem(i)">
         <image class="img" :src="i.url"></image>
